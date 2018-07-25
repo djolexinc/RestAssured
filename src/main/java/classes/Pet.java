@@ -2,11 +2,11 @@ package classes;
 
 public class Pet 
 {
-	@SuppressWarnings("unused")
-	private String name;
-	private String  id;
-	private String status;
-	private String photoUrls= "url-photo";
+	 String name;
+	 String  id;
+	 String status;
+	 String imgUrl;
+	 
 	public Pet()
 	{
 		
@@ -24,4 +24,9 @@ public class Pet
 	{
 		this.id = id;
 	}
+	public void setImg( String imgUrl)
+	{
+		this.imgUrl = imgUrl;
+	}
+	
 }
