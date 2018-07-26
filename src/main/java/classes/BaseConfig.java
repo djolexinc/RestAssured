@@ -1,7 +1,6 @@
 package classes;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.Reporter;
 import com.jayway.restassured.RestAssured;
 
 
@@ -18,12 +17,10 @@ public class BaseConfig
 		
 		if (port == null)
 		{
-			Reporter.log("Prosao 1 ", true);
 			RestAssured.port = Integer.valueOf(8080);
 	    }
 		else
 	    {
-			Reporter.log("Else 1 ", true);	
 			RestAssured.port = Integer.valueOf(port);
 		}
 	  
